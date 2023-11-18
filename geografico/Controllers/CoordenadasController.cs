@@ -1,4 +1,5 @@
 ﻿using geografico.Models;
+using geografico.funciones;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -19,8 +20,9 @@ namespace geografico.Controllers
         [HttpPost]
         public double getDistancia([FromBody] Distancia coordenadas)
         {
+            var distancia = FuncionesBase.DistanciaKm(coordenadas.latUno, coordenadas.lonUno, coordenadas.latDos, coordenadas.lonDos);
 
-            return 0;
+            return distancia;
         }
     }
 }

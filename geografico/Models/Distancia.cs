@@ -7,9 +7,9 @@ namespace geografico.Models
 {
     public class Distancia
     {
-        double latUno { get; set; }
-        double lonUno { get; set; }
-        double latDos { get; set; }
-        double lonDos { get; set; }
+        public float latUno { get; set; }
+        public float lonUno { get; set; }
+        public float latDos { get; set; }
+        public float lonDos { get; set; }
     }
 }
